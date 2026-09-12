@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Future Nursing Officer | Nursing, Paramedical, NEET & Test Series</title>
+<meta name="description" content="Future Nursing Officer - Nursing, GNM, B.Sc Nursing, Paramedical, UP Board, NEET preparation, online MCQ tests and notes.">
+<meta name="keywords" content="Future Nursing Officer, Nursing, GNM, BSc Nursing, Paramedical, UP Board, NEET, MCQ Test, Nursing Notes">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f8fc;color:#172033}
+header{background:linear-gradient(135deg,#0b5ed7,#13a8a8);color:#fff;padding:14px 5%;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{font-size:22px;font-weight:800}.menu{display:flex;gap:8px;flex-wrap:wrap}.menu button{border:0;background:transparent;color:#fff;padding:8px 10px;cursor:pointer;font-weight:600}
+.hero{padding:65px 6%;background:linear-gradient(135deg,#eaf5ff,#e8fffb);text-align:center}.hero h1{font-size:42px;margin:10px 0;color:#0758bd}.hero p{font-size:18px;max-width:720px;margin:15px auto;line-height:1.6}.btn{display:inline-block;border:0;border-radius:10px;padding:12px 18px;margin:5px;text-decoration:none;font-weight:700;cursor:pointer;background:#0758bd;color:#fff}.wa{background:#159447}.section{max-width:1100px;margin:auto;padding:45px 5%}.section h2{text-align:center;color:#0758bd}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#fff;padding:22px;border-radius:16px;box-shadow:0 5px 20px #00000012}.card h3{margin-top:0;color:#0758bd}.test{background:#fff;padding:22px;border-radius:16px;box-shadow:0 5px 20px #00000012;max-width:750px;margin:auto}.option{display:block;margin:10px 0;padding:12px;border:1px solid #ddd;border-radius:9px;cursor:pointer}.option:hover{background:#eef6ff}.hidden{display:none}footer{background:#101827;color:#fff;text-align:center;padding:30px}
+input,textarea{width:100%;padding:12px;margin:7px 0;border:1px solid #ccd3df;border-radius:8px}
+@media(max-width:600px){.hero h1{font-size:31px}.nav{align-items:flex-start;flex-direction:column}.menu{width:100%;overflow:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">🩺 Future Nursing Officer</div>
+<div class="menu">
+<button onclick="show('home')">Home</button><button onclick="show('courses')">Courses</button><button onclick="show('test')">MCQ Test</button><button onclick="show('notes')">Notes</button><button onclick="show('login')">Login/Register</button>
+</div></div>
+</header>
+
+<main id="home">
+<section class="hero">
+<h1>Future Nursing Officer</h1>
+<p>Nursing • GNM • B.Sc Nursing • Paramedical • UP Board • NEET Preparation • Online Test Series</p>
+<a class="btn" href="https://www.youtube.com/@future_nursing_officer0" target="_blank">▶ YouTube Channel</a>
+<a class="btn wa" href="https://wa.me/919579763044" target="_blank">💬 WhatsApp</a>
+</section>
+<section class="section"><h2>हमारे Subjects</h2><div class="grid">
+<div class="card"><h3>👩‍⚕️ Nursing</h3><p>GNM और B.Sc Nursing की तैयारी।</p></div>
+<div class="card"><h3>🧪 Paramedical</h3><p>Paramedical entrance और exam preparation।</p></div>
+<div class="card"><h3>📖 UP Board</h3><p>Class 11–12 के महत्वपूर्ण topics और revision।</p></div>
+<div class="card"><h3>🩺 NEET</h3><p>Biology, Chemistry और exam-oriented practice।</p></div>
+</div></section>
+</main>
+
+<section id="courses" class="section hidden"><h2>Courses & Preparation</h2><div class="grid">
+<div class="card"><h3>B.Sc Nursing</h3><p>Important MCQs, concepts और revision.</p><button class="btn" onclick="show('test')">Test दें</button></div>
+<div class="card"><h3>GNM</h3><p>Entrance और nursing subjects practice.</p><button class="btn" onclick="show('test')">MCQ शुरू करें</button></div>
+<div class="card"><h3>Paramedical</h3><p>Entrance-oriented questions और notes.</p><button class="btn" onclick="show('notes')">Notes देखें</button></div>
+</div></section>
+
+<section id="test" class="section hidden"><h2>Online MCQ Test</h2><div class="test">
+<div id="quiz"></div><button class="btn" onclick="submitQuiz()">Submit Test</button><h3 id="result"></h3>
+</div></section>
+
+<section id="notes" class="section hidden"><h2>Notes & PDF</h2><div class="grid">
+<div class="card"><h3>📄 Nursing Notes</h3><p>अपने PDF notes के links यहाँ जोड़ें।</p><a class="btn" href="#" onclick="alert('Admin panel से PDF link जोड़ें।');return false">Open PDF</a></div>
+<div class="card"><h3>📄 Biology Notes</h3><p>NEET/UP Board Biology revision material.</p><a class="btn" href="#" onclick="alert('Admin panel से PDF link जोड़ें।');return false">Open PDF</a></div>
+</div></section>
+
+<section id="login" class="section hidden"><h2>Login / Register</h2><div class="test">
+<input id="name" placeholder="Name">
+<input id="email" type="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<button class="btn" onclick="register()">Register / Login</button><p id="loginMsg"></p>
+</div></section>
+
+<section id="admin" class="section hidden"><h2>Admin Panel</h2><div class="test">
+<p><b>Demo Admin Panel</b></p><p>यह front-end demo है। Real user accounts, database, secure admin authentication और PDF upload के लिए backend/Firebase जोड़ना होगा।</p>
+<button class="btn" onclick="alert('Demo admin active')">Dashboard</button>
+</div></section>
+
+<footer>
+<p>© 2026 Future Nursing Officer</p>
+<p>Nursing | Paramedical | UP Board | NEET | Test Series</p>
+</footer>
+
+<script>
+const questions=[
+{q:"1. सामान्य वयस्क की सामान्य pulse rate कितनी होती है?",o:["20–40/min","60–100/min","120–160/min","150–200/min"],a:1},
+{q:"2. मानव शरीर में oxygen का मुख्य transport किससे होता है?",o:["Platelets","Hemoglobin","Plasma only","WBC"],a:1},
+{q:"3. B.Sc Nursing किस field से संबंधित course है?",o:["Nursing","Engineering","Law","Architecture"],a:0},
+{q:"4. Blood का liquid part क्या कहलाता है?",o:["Plasma","Platelet","RBC","WBC"],a:0},
+{q:"5. सामान्य body temperature लगभग कितना माना जाता है?",o:["25°C","30°C","37°C","45°C"],a:2}
+];
+function show(id){
+document.querySelectorAll('main,section[id]').forEach(x=>x.classList.add('hidden'));
+document.getElementById(id).classList.remove('hidden'); window.scrollTo(0,0);
+}
+function loadQuiz(){
+document.getElementById('quiz').innerHTML=questions.map((x,i)=>`<div><h3>${x.q}</h3>${x.o.map((v,j)=>`<label class="option"><input type="radio" name="q${i}" value="${j}"> ${v}</label>`).join('')}</div>`).join('');
+}
+function submitQuiz(){
+let score=0;questions.forEach((x,i)=>{let r=document.querySelector(`input[name=q${i}]:checked`);if(r&&+r.value===x.a)score++});
+document.getElementById('result').textContent=`आपका Score: ${score}/${questions.length}`;
+}
+function register(){
+let n=document.getElementById('name').value.trim();
+if(!n){document.getElementById('loginMsg').textContent='कृपया Name भरें।';return}
+localStorage.setItem('fno_user',n);document.getElementById('loginMsg').textContent=`Welcome, ${n}!`;
+}
+loadQuiz();
+</script>
+</body></html>
